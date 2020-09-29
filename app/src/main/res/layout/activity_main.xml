@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titleBackground"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center|center_vertical"
+            android:padding="30sp"
+            android:text="@string/titulo"
+            android:textColor="@color/textoContraste"
+            android:textSize="24sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSeccion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp"
+                    android:text="@string/tituloSeccion1"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4sp"
+                        android:layout_weight="1"
+                        android:background="@color/elementBackground"
+                        android:ems="10"
+                        android:hint="@string/nombre"
+                        android:inputType="textPersonName"
+                        android:padding="6sp" />
+
+                    <EditText
+                        android:id="@+id/txtApellido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4sp"
+                        android:layout_weight="1"
+                        android:background="@color/elementBackground"
+                        android:ems="10"
+                        android:hint="@string/apellido"
+                        android:inputType="textPersonName"
+                        android:padding="6sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txtDireccion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4sp"
+                    android:background="@color/elementBackground"
+                    android:ems="10"
+                    android:hint="@string/direccion1"
+                    android:inputType="textPersonName"
+                    android:padding="6sp" />
+
+                <EditText
+                    android:id="@+id/txtDireccion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4sp"
+                    android:background="@color/elementBackground"
+                    android:ems="10"
+                    android:hint="@string/direccion2"
+                    android:inputType="textPersonName"
+                    android:padding="6sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtCiudad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4sp"
+                        android:layout_weight="1"
+                        android:background="@color/elementBackground"
+                        android:ems="10"
+                        android:hint="@string/ciudad"
+                        android:inputType="textPersonName"
+                        android:padding="6sp" />
+
+                    <EditText
+                        android:id="@+id/txtZip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4sp"
+                        android:layout_weight="1"
+                        android:background="@color/elementBackground"
+                        android:ems="10"
+                        android:hint="@string/zip"
+                        android:inputType="textPersonName"
+                        android:padding="6sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/comboPais"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4sp"
+                        android:background="@color/elementBackground"
+                        android:padding="6sp" />
+
+                    <Spinner
+                        android:id="@+id/comboProvincia"
+                        android:layout_width="241dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4sp"
+                        android:layout_weight="1"
+                        android:background="@color/elementBackground"
+                        android:padding="6sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtSeccion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp"
+                    android:text="@string/tituloSeccion2"
+                    android:textSize="18sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_margin="4sp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioGroup
+                            android:id="@+id/rgMetodoEntrega"
+                            android:layout_width="299dp"
+                            android:layout_height="105dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginLeft="28dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.516">
+
+                            <RadioButton
+                                android:id="@+id/rdbEntregaPremium"
+                                android:layout_width="299dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/entregaNormal" />
+
+                            <RadioButton
+                                android:id="@+id/rdbEntregaExpress"
+                                android:layout_width="299dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/entregaExpress" />
+
+                            <RadioButton
+                                android:id="@+id/rdbEntregaNormal"
+                                android:layout_width="299dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/entregaPremium" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/txtPrecioNormal"
+                            android:layout_width="43dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="24dp"
+                            android:text="@string/precioNormal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.149"
+                            app:layout_constraintStart_toEndOf="@+id/rgMetodoEntrega"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txtPrecioPremium"
+                            android:layout_width="45dp"
+                            android:layout_height="23dp"
+                            android:layout_marginBottom="24dp"
+                            android:text="@string/precioPremium"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.153"
+                            app:layout_constraintStart_toEndOf="@+id/rgMetodoEntrega" />
+
+                        <TextView
+                            android:id="@+id/txtPrecioExpress"
+                            android:layout_width="44dp"
+                            android:layout_height="23dp"
+                            android:text="@string/precioExpress"
+                            app:layout_constraintBottom_toTopOf="@+id/txtPrecioPremium"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.136"
+                            app:layout_constraintStart_toEndOf="@+id/rgMetodoEntrega"
+                            app:layout_constraintTop_toBottomOf="@+id/txtPrecioNormal"
+                            app:layout_constraintVertical_bias="0.47" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4sp"
+                    app:contentPadding="10sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+                            <TextView
+                                android:id="@+id/txtSubtotal"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/subtotal" />
+
+                            <TextView
+                                android:id="@+id/txtSubtotalValor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/titleBackground" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+                            <TextView
+                                android:id="@+id/txtEnvio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/envio" />
+
+                            <TextView
+                                android:id="@+id/txtEnvioValor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/titleBackground" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10sp">
+
+                            <TextView
+                                android:id="@+id/txtTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/total" />
+
+                            <TextView
+                                android:id="@+id/txtTotalValor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="@color/titleBackground" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp" />
+
+                <Button
+                    android:id="@+id/btnProcesar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="@color/titleBackground"
+                    android:text="@string/procesar" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

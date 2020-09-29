@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Laboratorio4</string>
+    <string name="titulo">Formulario de Confirmación</string>
+    <string name="tituloSeccion1">Datos de Entrega</string>
+    <string name="tituloSeccion2">Costos de Envío</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="direccion1">Dirección 1</string>
+    <string name="direccion2">Dirección 2</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="zip">ZIP</string>
+    <string name="provincia">Provincia</string>
+    <string name="pais">Pais</string>
+
+    <string name="tipoEntrega">Tipo de Entrega</string>
+    <string name="entregaNormal">Entrega Normal (10 dias)</string>
+    <string name="entregaExpress">Entrega Express (7 dias)</string>
+    <string name="entregaPremium">Entrega Premium (2 dias)</string>
+
+    <string name="precioNormal">$10</string>
+    <string name="precioExpress">$20</string>
+    <string name="precioPremium">$100</string>
+
+    <string name="subtotal">SUBTOTAL</string>
+    <string name="envio">ENVIO</string>
+    <string name="total">TOTAL</string>
+
+    <string name="procesar">PROCESAR</string>
+
+
+
+    <string-array name="provincias">
+        <item>Provincias</item>
+        <item>Panamá</item>
+        <item>Panamá Oeste</item>
+        <item>Coclé</item>
+        <item>Veraguas</item>
+        <item>Los Santos</item>
+        <item>Chiriquí</item>
+        <item>Bocas del Toro</item>
+        <item>Colón</item>
+        <item>Darién</item>
+        <item>Herrera</item>
+
+    </string-array>
+
+    <string-array name="paises">
+        <item>País</item>
+        <item>Panamá</item>
+    </string-array>
+
+    <string name="tituloDialogo">Información</string>
+    <string name="btnOk">Procesar</string>
+    <string name="btnNo">Cancelar</string>
+
+    <string name="mensajeProcesar">Listo, haz precionado el botón Procesar.</string>
+    <string name="mensajeCancelar">Haz precionado el botón Cancelar.</string>
+
+    <string name="mensajeRadioButtomsIncorrecto">Upps, algo ha ido mal con los radio buttons.</string>
+</resources>
